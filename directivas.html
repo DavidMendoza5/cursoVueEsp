@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directivas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="vue">
+        <!-- Al poner sólo los dos puntos hacemos referencia a la directiva v-bind -->
+        <img :src="imagen" alt="">
+        <!-- La propiedad v-text es lo mismo que utilizar la interpolación -->
+        <div v-text="texto"></div>
+        <!-- v-html nos permite poner etiquetas HTML dentro del valor de una variabel y que no se muestre como un simple texto, sino como etiqueta HTML -->
+        <div v-html="texto2"></div>
+        <!-- v-if y v-else nos permiten realizar condiciones como se realizan en cualquier lenguaje de programación, esta diectiva afecta
+        a todos los elementos hijos, igual existe el v-else-if para poner otras condiciones -->
+        <div v-if='mostrar'>Mostrar en verdadero
+            <h3>Hola</h3>
+            <p>Bienvenidos a Vue</p>
+        </div>
+        <div v-else> Mostrar en falso</div>
+        <!-- v-show hace lo mismo a que v-if, su diferencia está en que no tiene un "else" y que esta directiva no elimina el elemento, si no que lo esconde
+            con CSS usando la propiedad display:none-->
+        <div v-show="mostrar2">v-show</div>
+        <!-- La etiqueta v-for nos permite hacer ciclos, se le debe pasar una variable que tomará cada valor de nuestra variable del modelo y el nombre de
+            la variable que está en el modelo -->
+        <ul>Lista de string:
+            <li v-for="pais in paises">{{ pais }}</li>
+        </ul>
+        <!-- Si lo ponemos dentro de un template, podemos agregar más cosas que queremos repetir con el ciclo -->
+        <ul>Lista de string dentro de template:
+            <template v-for="pais in paises">
+                <li>{{ pais }}</li>
+                <hr/>
+            </template>
+        </ul>
+        <!-- Igual se le puede poner un índice -->
+        <ul>Lista de string con índices:
+            <li v-for="(pais, index) in paises">{{ index+1 }} - {{ pais }}</li>
+        </ul>
+        <ul>Lista de objetos:
+            <li v-for="pais in paises2">{{ pais.nombre }}</li>
+        </ul>
+        <ul>Lista de propiedades de un objeto:
+            <li v-for="(atributo, llave) in objeto">{{ llave  }} : {{ atributo }}</li>
+        </ul>
+        <!-- La etiqueta template de HTML funciona como el div, su diferencia es que no aparece al momento de cargar la página (en el DOM), es decir, es como
+            si no estuviera -->
+    </div>
+
+    <script src="directivas.js"></script>
+</body>
+</html>

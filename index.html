@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div class="vue">
+        <!-- Realizamos una interpolación para obtener el mensaje contenido en data del archivo home.js -->
+        <span>{{ mensaje }}</span> 
+        </br>
+        <span>{{ mostrarMensaje() }}</span> 
+        </br>
+        <span>Hola</span>
+        </br>
+        <span>{{ mostrarMensaje2() }}</span> 
+        <!-- Con la directiva v-bind se crea un enlace y nos permite acceder al data desde las propiedades HTML
+        de igual forma se puede poner sólo los dos puntos en lugar de la palabra v-bind, para indicar que será una directiva de enlace -->
+        <img v-bind:src="src" alt="Vue">
+        </br>
+        <button v-on:click="primero++">Incrementar primero</button>
+        <button v-on:click="segundo++">Incrementar segundo</button>
+        <button v-on:click="tercero++">Incrementar tercero</button>
+        <button v-on:click="cuarto++">Incrementar cuarto</button>
+        <p>Primero: {{ primero }}</p>
+        <p>Segundo: {{ segundo }}</p>
+        <p>Tercero: {{ tercero }}</p>
+        <p>Cuarto: {{ cuarto }}</p>
+        <p>Suma: {{ total }}</p>
+        <!-- v-model nos permite tener un enlace de la vista al modelo y del modelo a la vista, es decir, un enlace doble, por ejemplo:
+        al cargar la página se va a mostrar el contenido de la variable nombre en el input, pero si modificamos esa variable desde el VSCode,
+        entonces va a cambiar en el input, de igual forma si modificamos lo que aparece en el input, se va a modificar en el modelo -->
+        <input type="text" v-model="nombre">
+        <h3>Hola, soy {{ nombre }}</h3>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
