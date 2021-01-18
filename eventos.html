@@ -7,7 +7,30 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    
+    <div class="eventos">
+        <button v-on:mouseEnter="sumarUno">Sumar uno</button> 
+        <!-- Otro evento: mouseEnter es un manejador de eventos que se acciona cuando se pasa el mouse sobre el objeto -->
+        <!-- El arroba @ es una forma de simplificar el v-on: -->
+        <button @click="restarUno">Restar uno</button>
+        <button v-on:click="mostrarAlerta('Esta es una alerta')">Alerta</button>
+        <hr>
+        {{ contador }}
+        <div style="height:300px;border: 1px solid black" v-on:mousemove="mostrarUbicacion" v-on:click="sumarContador(3)">
+            <div style="height:30px;border: 1px solid red" v-on:mousemove.stop></div>
+            <!-- mousemove nos permite lanzar un evento cada que el mouse se mueve dentro del objeto -->
+            <!-- Se pueden enviar varios eventos a Vue -->
+            <!-- De igual forma se puede poner una variable para afectarla directamente en lugar de poner un método, por ejemplo, en lugar
+                de poner sumarContador se puede llamar directamente a contador2 -->
+            <!-- Modificadores de eventos:
+                Para llamarlos de ponen al final del evento, ejemplo <v-on:click.once>">
+                - once: Sirve para ejecutar el evento una sola vez 
+                - stop: Detiene el evento (evita la propagación del evento)
+                En la página oficial de Vue se encuentran todos los modificadores (Event handling)-->
+
+        </div>
+        x: {{x}}, y: {{y}}, contador: {{contador2}}
+        <input type="text" v-on:keyup="sumarContador(1)">
+    </div>
 
     <script src="eventos.js"></script>
 </body>
