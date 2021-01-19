@@ -14,5 +14,5 @@ Este repo contiene algunos ejercicios del curso.
 ### Sección 3:
 - eventos.html
 - eventos.js
-### Sección 4:
+### Sección 4 y 5:
 - Proyecto lista de tareas
