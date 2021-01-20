@@ -1,9 +1,11 @@
 # Curso de VueJs en español
 Este repo contiene algunos ejercicios del curso.
 ## Secciones:
-1. VueJs2 
-2. Directivas 
-3. Eventos 
+- VueJs2 
+- Directivas 
+- Eventos 
+- Proyecto
+- Vue CLI
 
 ### Sección 1:
 - index.html
@@ -16,3 +18,5 @@ Este repo contiene algunos ejercicios del curso.
 - eventos.js
 ### Sección 4 y 5:
 - Proyecto lista de tareas
+### Sección 6:
+- https://github.com/DavidMendoza5/ListaTareasProject
