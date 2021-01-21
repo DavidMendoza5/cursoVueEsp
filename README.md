@@ -4,7 +4,7 @@ Este repo contiene algunos ejercicios del curso.
 - VueJs2 (1)
 - Directivas (2)
 - Eventos (3)
-- Proyecto(4 y 5)
+- Proyecto (4 y 5)
 - Vue CLI (6)
 - Slots (7)
 - Directivas personalizadas (8)
