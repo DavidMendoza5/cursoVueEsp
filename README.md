@@ -6,6 +6,7 @@ Este repo contiene algunos ejercicios del curso.
 - Eventos 
 - Proyecto
 - Vue CLI
+- Slots
 
 ### Sección 1:
 - index.html
@@ -20,3 +21,5 @@ Este repo contiene algunos ejercicios del curso.
 - Proyecto lista de tareas
 ### Sección 6:
 - https://github.com/DavidMendoza5/ListaTareasProject
+### Seccción 7:
+- https://github.com/DavidMendoza5/Form-Slots
