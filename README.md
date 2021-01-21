@@ -1,12 +1,13 @@
 # Curso de VueJs en español
 Este repo contiene algunos ejercicios del curso.
 ## Secciones:
-- VueJs2 
-- Directivas 
-- Eventos 
-- Proyecto
-- Vue CLI
-- Slots
+- VueJs2 (1)
+- Directivas (2)
+- Eventos (3)
+- Proyecto(4 y 5)
+- Vue CLI (6)
+- Slots (7)
+- Directivas personalizadas (8)
 
 ### Sección 1:
 - index.html
@@ -23,3 +24,5 @@ Este repo contiene algunos ejercicios del curso.
 - https://github.com/DavidMendoza5/ListaTareasProject
 ### Seccción 7:
 - https://github.com/DavidMendoza5/Form-Slots
+### Sección 8:
+- https://github.com/DavidMendoza5/directivasPer
