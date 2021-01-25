@@ -9,6 +9,7 @@ Este repo contiene algunos ejercicios del curso.
 - Slots (7)
 - Directivas personalizadas (8)
 - Formularios (9)
+- Filtros (10)
 
 ### Sección 1:
 - index.html
@@ -29,3 +30,5 @@ Este repo contiene algunos ejercicios del curso.
 - https://github.com/DavidMendoza5/directivasPer
 ### Sección 9:
 - https://github.com/DavidMendoza5/vueForm
+### Sección 10:
+- https://github.com/DavidMendoza5/VueFilters
