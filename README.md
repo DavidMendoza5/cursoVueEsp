@@ -10,6 +10,7 @@ Este repo contiene algunos ejercicios del curso.
 - Directivas personalizadas (8)
 - Formularios (9)
 - Filtros (10)
+- Enrutamientos (12)
 
 ### Sección 1:
 - index.html
@@ -32,3 +33,5 @@ Este repo contiene algunos ejercicios del curso.
 - https://github.com/DavidMendoza5/vueForm
 ### Sección 10:
 - https://github.com/DavidMendoza5/VueFilters
+### Sección 12:
+- https://github.com/DavidMendoza5/SPA-example
